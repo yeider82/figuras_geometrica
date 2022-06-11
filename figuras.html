@@ -1,10 +1,86 @@
 <!DOCTYPE html>
+<!--
+    se agragaron nuevas cosas en el html nuevas etiquetas tales como:
+    -<labl> -<form> -<br> -<button> -<section> -<header>
+-->
 <html>
     <head>
         <title>yeider_figuras</title>
     </head>
     <body>
-        <h1>UN TITULO DINAMICO</h1>
+        <header>
+            <h1>caluladora de formas geometricas</h1>  
+            <p> este es el primer parrafo del titulo</p>  
+        </header>
+        <section>
+            <h2> seccion cuadrado </h2>
+            <form>
+                <label for="inputcuadrado">
+                    escribe cuanto miden los aldos del cuadrado :
+                </label>
+                <input  id="inputcuadrado" type="number"/>
+                <br>
+                <button type="button" onclick="calculoperimetrocuadrado()">
+                    calcular perimetro
+                </button>
+                <button type="button" onclick="calculoareacuadrado()">
+                    calcular area
+                </button>
+            </form>
+        </section>
+        <br>
+        <section>
+            <h2> seccion triangulo</h2>
+            <h3> perimetro del triangulo:</h3>
+            <label for="lado_1">
+                escribe cuanto mide el primer lado del triangulo : 
+            </label>
+            <input id="lado_1" type="number"/>
+            <br>
+            <label for="lado_2">
+                escribe cuanto mide el segundo lado del triangulo: 
+            </label>
+            <input id="lado_2" type="number"/>
+            <br>
+            <label for="lado_3">
+                escribe cuanto mide el tercer lado del triangulo : 
+            </label>
+            <input id="lado_3" type="number"/>
+            <br>
+            <button type="button" onclick="calculoPerimetroTriangulo()">
+                perimetro del triangulo
+            </button>
+            <h3> area del triangulo:</h3>
+            <label for="basetriangulo">
+                escribe la base del triangulo: 
+            </label>
+            <input id="basetriangulo" type="number"/>
+            <br>
+            <label for="alturatriangulo">
+                escribe la altura del triangulo: 
+            </label>
+            <input id="alturatriangulo" type="number"/>
+            <br>
+            <button type="button" onclick="calculoAreaTriangulo()">
+                area del triangulo
+            </button>
+        </section> 
+        <section>
+            <h2>
+                seccion del circulo
+            </h2>
+            <label for="radiocirculo">
+                escribe el radio del circulo:
+            </label>
+            <input id="radiocirculo" type="number"/>
+            <br>
+            <button type="button" onclick="calculoperimetrocirculo()">
+                perimetro del circulo
+            </button>
+            <button type="button" onclick="calcularareaciculo()">
+                area del circulo
+            </button>
+        </section> 
         <P>Un parrafo super dinamico</P>
         <script src="figurasgeo.js"></script>
     </body>

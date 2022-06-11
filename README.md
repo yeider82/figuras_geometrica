@@ -1,9 +1,8 @@
 # figuras_geometrica
 calculo de figuras geometricas
 
-## que se ah echo inicialmente
-se han creado las variables de las respectivas formas para
-para hallar las diferentes dimencines como el area y el perimetro
+## funcionamiento del prigrama:
+se calculan longitudes como area y perimetro gracias a la generacion y segmentacion de formularios los cuales se recogen los datos correspondientes.
 
-## metas
-se mejorara el codigo y la documentacion respectiva 
+## mejoras futuras:
+se investigara la forma en la que se mejorara la presentacion mediante tecnologias como como css o framewors de css
